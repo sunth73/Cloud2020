@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: client
+          uri: lb://client
+          predicates:
+          - After=2023-01-20T06:06:06+08:00[Asia/Shanghai]

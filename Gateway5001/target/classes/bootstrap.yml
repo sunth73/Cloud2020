@@ -1,20 +1,21 @@
 spring:
-  config:
-    name: server9001
   cloud:
     nacos:
       config:
         server-addr: 121.36.245.230:8848
         group: CLOUD2020_GROUP
+        file-extension: yaml
         namespace: 0ed88fe6-bf21-4f8c-9606-4b71d8ca06e1
-        file-extension: properties
-        refresh-enabled: true
-        name: server9001
+        password: nacos
+        username: nacos
+        name: gateway5001
       discovery:
         server-addr: 121.36.245.230:8848
-#        group: CLOUD2020_GROUP
+        #        group: CLOUD2020_GROUP
         namespace: 0ed88fe6-bf21-4f8c-9606-4b71d8ca06e1
         username: nacos
         password: nacos
+  #        service: client70
+
   application:
-    name: server
+    name: gateway

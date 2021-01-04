@@ -11,6 +11,8 @@
     <modules>
         <module>Server9001</module>
         <module>Client7001</module>
+        <module>Server9002</module>
+        <module>Gateway5001</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,6 +1,6 @@
 spring:
   config:
-    name: server9001
+    name: server9002
   cloud:
     nacos:
       config:
@@ -9,7 +9,7 @@ spring:
         namespace: 0ed88fe6-bf21-4f8c-9606-4b71d8ca06e1
         file-extension: properties
         refresh-enabled: true
-        name: server9001
+        name: server9002
       discovery:
         server-addr: 121.36.245.230:8848
 #        group: CLOUD2020_GROUP

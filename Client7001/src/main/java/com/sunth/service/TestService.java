@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 2020/12/28 4:02 下午
  * other
  */
-@FeignClient(value = "server9001",contextId = "testservice")
+@FeignClient(value = "server",contextId = "testservice")
 @RequestMapping("/test")
 public interface TestService {
     @GetMapping("/test")
